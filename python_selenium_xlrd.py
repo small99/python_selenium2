@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 
-__author__ = u'苦叶子'
+__author__ = u'苦叶子' 
 
 from selenium import webdriver
 import unittest
@@ -81,14 +81,4 @@ class BaiduTest(unittest.TestCase):
 if __name__ == '__main__':
     testunit = unittest.TestSuite()
     testunit.addTest(BaiduTest('test_baidu_search'))    
-    # 定义报告输出路径
-    htmlPath = u"testReport.html"
-    fp = file(htmlPath, "wb")
-    
-    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, 
-           title=u"百度测试", 
-           description=u"测试用例结果")
-    
-    runner.run(testunit)
-    
-    fp.close()
+    # 
